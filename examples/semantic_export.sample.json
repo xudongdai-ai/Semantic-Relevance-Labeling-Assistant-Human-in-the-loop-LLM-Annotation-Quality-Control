@@ -1,0 +1,38 @@
+{
+  "exported_at": "2026-01-01T00:00:00Z",
+  "project": {
+    "id": 123,
+    "name": "示例语义相关性项目",
+    "task_type": "semantic_relevance"
+  },
+  "items": [
+    {
+      "item": {
+        "id": 456,
+        "item_key": "sample-item-001"
+      },
+      "song": {
+        "title": "虚构歌曲标题"
+      },
+      "assignments": [
+        {
+          "id": 789,
+          "annotator_email": "you@example.com",
+          "status": "assigned"
+        }
+      ],
+      "semantic_context": {
+        "song_title": "虚构歌曲标题",
+        "lyrics": "此处为虚构歌词片段",
+        "pairs": [
+          {
+            "pair_id": "pair-001",
+            "description": "虚构的 Query 与歌曲语义关系",
+            "llm_grade_final": 2,
+            "llm_grades": [2, 2, 1]
+          }
+        ]
+      }
+    }
+  ]
+}
