@@ -1,5 +1,9 @@
 # Semantic Relevance Labeling Assistant
 
+
+Semantic Relevance Labeling Assistant is a Python toolkit for human-in-the-loop semantic relevance annotation and quality control. It transforms LLM-generated grading results into structured review plans, aggregates model judgments, measures agreement between candidate grades, and separates high-confidence items from cases that require manual inspection.
+The assistant can operate entirely on local exported project data or connect to a compatible annotation backend for controlled export and submission workflows. Before submission, it validates project identity, task type, user assignment, query identifiers, and submission state. Submitted results can also be read back for verification.
+The system deliberately treats LLM outputs as decision-support signals rather than ground truth. By default it only generates a local review plan; online submission requires explicit confirmation of both submission mode and AI-assisted labeling. The implementation uses Python 3.10+ and has no third-party Python dependencies.
 Human-in-the-loop semantic relevance annotation and quality-control toolkit.
 
 Python 3.10+ · Human-in-the-loop · AI-assisted · CLI · Zero third-party dependencies
